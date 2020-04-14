@@ -2,21 +2,13 @@ ACS712
 ======
 An Arduino library to interact with the ACS712 Hall effect-based linear current sensor. Includes DC and RMS AC current measuring. Supports ACS712-05B, ACS712-10A, ACS712-30A sensors. Typical applications include motor control, load detection and management, switch mode power supplies, and overcurrent fault protection.
 
-For more information see the datasheet: http://www.allegromicro.com/~/media/files/datasheets/acs712-datasheet.ashx
-
-Wiring
-======
-| ACS712 | Arduino |
-|:------:|:-------:|
-| GND    | GND     |
-| OUT    | A1      |
-| VCC    | 5V      |
-
 Methods
 =======
 ### Constructor:
 ### **ACS712(** *ACS712_type* type, *uint8_t* _pin **)**
-Constructor has two parameters: sensor model and analog input to which it is connected. Supported models: **ACS712_05B**, **ACS712_20A**, **ACS712_30A**
+Constructor has two parameters: sensor model and analog input to which it is connected. 
+
+Supported models: **ACS712_05B**, **ACS712_20A**, **ACS712_30A**
 
 ### *float* **getCurrentDC()**
 This method reads the value from the current sensor and returns it.
